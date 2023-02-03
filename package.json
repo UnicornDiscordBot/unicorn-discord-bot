@@ -1,0 +1,64 @@
+{
+  "author": "Jeff <jeff@modulaweb.fr>",
+  "description": "A module to simply create and manage a powerful discord bot",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "index.js",
+  "name": "unicorn-discord-bot",
+  "private": false,
+  "version": "1.0.0",
+  "scripts": {
+    "run:example": "node example/index.js",
+    "lint": "eslint . --ext .js --ignore-path .gitignore",
+    "lint:fix": "eslint . --ext .js --ignore-path .gitignore --fix",
+    "commit": "git-cz"
+  },
+  "dependencies": {
+    "@discordjs/opus": "^0.8.0",
+    "@discordjs/voice": "^0.11.0",
+    "@keyv/sqlite": "^3.6.1",
+    "bufferutil": "^4.0.6",
+    "discord-api-types": "^0.37.9",
+    "discord.js": "14.4.0",
+    "dotenv": "^16.0.2",
+    "fastify": "^4.9.2",
+    "globby": "^13.1.2",
+    "keyv": "^4.5.0",
+    "libsodium-wrappers": "^0.7.10",
+    "pino": "^8.5.0",
+    "pino-pretty": "^9.1.0",
+    "utf-8-validate": "^5.0.9"
+  },
+  "repository": {
+    "url": "https://github.com/j33f/better-discord-bot",
+    "type": "git"
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  ],
+  "keywords": [
+    "discord",
+    "bot",
+    "discordjs",
+    "discord.js",
+    "voice",
+    "music",
+    "voice channel",
+    "slash command",
+    "messages",
+    "API server"
+  ],
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "8.22.0",
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
